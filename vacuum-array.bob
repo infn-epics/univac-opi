@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-01-14 17:52:07 by andreamichelotti-->
+<display version="2.0.0">
+  <name>vacuumArrayMain_$(LCID)</name>
+  <width>350</width>
+  <height>820</height>
+  <actions execute_as_one="true">
+  </actions>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>Name</text>
+    <width>70</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>Value</text>
+    <x>134</x>
+    <width>56</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_13</name>
+    <text>Type</text>
+    <x>235</x>
+    <width>52</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_14</name>
+    <text>Zone</text>
+    <x>289</x>
+    <width>40</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>vacuumArray_$(LCID)</name>
+    <file>vacuum_display.bob</file>
+    <y>20</y>
+    <width>350</width>
+    <height>800</height>
+  </widget>
+</display>
