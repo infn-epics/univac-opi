@@ -52,15 +52,27 @@ device_prefix = widget.getEffectiveMacros().getValue("P")
 # Process each device
 for device in devinfo:
     # logger.info("device " + device['Name'] + " zone " + device['Zone'] + " type " + device['Type'])
-
+    pvname="press_RB"
+    name=device['Name']
+    opipath=""
     if zoneSelector and zoneSelector != "ALL" and zoneSelector != device['Zone']:
         continue
     if typeSelector and int(typeSelector) != -1 and typeSelector != device['Type']:
         continue
-    devices.append({'R': device['Name'], "P": device_prefix, "TYPE": device['Type'], "ZONE": device['Zone']})
+    if 'PvName' in device:
+        pvname = device['PvName']
+    if 'Alias' in device:
+        name = device['Alias']
+    
+    if 'Prefix' in device:
+        device_prefix = device['Prefix']
+
+    if 'OPI' in device:
+        opipath = device['OPI']
+    devices.append({'NAME':name,'R': device['Name'], "P": device_prefix, "TYPE": device['Type'], "ZONE": device['Zone'],"PVNAME":pvname,"OPI":opipath})
     logger.info("loading " + device['Name'])
 
-embedded_width = 800
+embedded_width = 410
 embedded_height = 30
 
 def createInstance(x, y, macros):

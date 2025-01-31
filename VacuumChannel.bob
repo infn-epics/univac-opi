@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-01-14 18:02:21 by andreamichelotti-->
+<!--Saved on 2025-01-31 15:21:28 by andreamichelotti-->
 <display version="2.0.0">
   <name>VacuumChannel</name>
-  <width>350</width>
+  <width>410</width>
   <height>30</height>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_5</name>
@@ -20,8 +20,8 @@
     </background_color>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>Text Update</name>
-    <pv_name>$(P):$(R):press_RB</pv_name>
+    <name>PressureReadout</name>
+    <pv_name>$(P):$(R):$(PVNAME)</pv_name>
     <x>134</x>
     <y>6</y>
     <width>95</width>
@@ -44,8 +44,8 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_11</name>
-    <text>$(R)</text>
+    <name>SensorName</name>
+    <text>$(NAME)</text>
     <y>6</y>
     <width>125</width>
     <font>
@@ -86,5 +86,31 @@
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>CustomControl</name>
+    <actions>
+      <action type="open_display">
+        <file>$(OPI)</file>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <pv_name>loc://control_$(LCID)&lt;VString&gt;("$(OPI)")</pv_name>
+    <text>Ctrl</text>
+    <x>350</x>
+    <width>60</width>
+    <rules>
+      <rule name="Enable" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvStr0!=&quot;&quot;">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pvStr0==&quot;&quot;">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
   </widget>
 </display>
