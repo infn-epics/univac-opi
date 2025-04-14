@@ -55,9 +55,9 @@ for device in devinfo:
     pvname="press_RB"
     name=device['Name']
     opipath=""
-    if zoneSelector and zoneSelector != "ALL" and zoneSelector != device['Zone']:
+    if zoneSelector and zoneSelector != "ALL" and (not('Zone' in device) or zoneSelector != device['Zone']):
         continue
-    if typeSelector and int(typeSelector) != -1 and typeSelector != device['Type']:
+    if typeSelector and int(typeSelector) != -1 and (not ('Type' in device) or typeSelector != device['Type']):
         continue
     if 'PvName' in device:
         pvname = device['PvName']
