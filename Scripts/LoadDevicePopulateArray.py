@@ -52,7 +52,7 @@ device_prefix = widget.getEffectiveMacros().getValue("P")
 # Process each device
 for device in devinfo:
     # logger.info("device " + device['Name'] + " zone " + device['Zone'] + " type " + device['Type'])
-    pvname="press_RB"
+    pvname="PRES_RB"
     name=device['Name']
     opipath=""
     if zoneSelector and zoneSelector != "ALL" and (not('Zone' in device) or zoneSelector != device['Zone']):
