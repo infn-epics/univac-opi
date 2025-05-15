@@ -67,8 +67,8 @@ for device in devinfo:
     if 'Prefix' in device:
         device_prefix = device['Prefix']
 
-    if 'OPI' in device:
-        opipath = device['OPI']
+    if 'Opi' in device:
+        opipath = device['Opi']
     devices.append({'NAME':name,'R': device['Name'], "P": device_prefix, "TYPE": device['Type'], "ZONE": device['Zone'],"PVNAME":pvname,"OPI":opipath})
     logger.info("loading " + device['Name'])
 

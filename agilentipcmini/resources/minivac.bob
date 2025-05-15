@@ -60,7 +60,7 @@
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>MiniVAC - $(DEVICE)</text>
+    <text>MiniVAC - $(P):$(R)</text>
     <tooltip></tooltip>
     <transparent>false</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -94,7 +94,7 @@
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <LABEL>Current (1MA max)</LABEL>
-      <PV_RB>$(DEVICE):MA</PV_RB>
+      <PV_RB>$(P):$(R):MA</PV_RB>
     </macros>
     <name>CURRENT_1MA</name>
     <opi_file>/opt/epics/boy/gui-lib/opi/widget-library/readback_engineering.opi</opi_file>
@@ -136,8 +136,8 @@
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <LABEL>ENABLE</LABEL>
-      <PV_RB>$(DEVICE):RB</PV_RB>
-      <PV_SP>$(DEVICE):PWR</PV_SP>
+      <PV_RB>$(P):$(R):RB</PV_RB>
+      <PV_SP>$(P):$(R):PWR</PV_SP>
     </macros>
     <name>ENABLE_HV</name>
     <opi_file>/opt/epics/boy/gui-lib/opi/widget-library/readback_choice.opi</opi_file>
@@ -179,7 +179,7 @@
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <LABEL>Current (10MA max)</LABEL>
-      <PV_RB>$(DEVICE):MA10</PV_RB>
+      <PV_RB>$(P):$(R):MA10</PV_RB>
     </macros>
     <name>CURRENT_10MA</name>
     <opi_file>/opt/epics/boy/gui-lib/opi/widget-library/readback_engineering.opi</opi_file>
@@ -221,7 +221,7 @@
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <LABEL>Voltage (kV)</LABEL>
-      <PV_RB>$(DEVICE):KV</PV_RB>
+      <PV_RB>$(P):$(R):KV</PV_RB>
     </macros>
     <name>VOLTAGE</name>
     <opi_file>/opt/epics/boy/gui-lib/opi/widget-library/readback_engineering.opi</opi_file>

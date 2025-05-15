@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Saved on 2025-04-29 17:02:28 by Alex-->
 <display version="2.0.0">
-  <name>IPCMini Vacuum Controller - $(DEVICE)</name>
+  <name>IPCMini Vacuum Controller - $(P):$(R)</name>
   <x>481</x>
   <y>54</y>
   <height>700</height>
@@ -15,7 +15,7 @@
   <grid_step_y>6</grid_step_y>
   <widget type="label" version="2.0.0">
     <name>Title Banner_3</name>
-    <text>IPCMini - $(DEVICE)</text>
+    <text>IPCMini - $(P):$(R)</text>
     <width>800</width>
     <height>45</height>
     <font>
@@ -45,8 +45,8 @@
     <name>Linking Container</name>
     <macros>
       <LABEL>V Target</LABEL>
-      <PV_RB>$(DEVICE):VOLTTGT_RB</PV_RB>
-      <PV_SP>$(DEVICE):VOLTTGT_SP</PV_SP>
+      <PV_RB>$(P):$(R):VOLTTGT_RB</PV_RB>
+      <PV_SP>$(P):$(R):VOLTTGT_SP</PV_SP>
     </macros>
     <file>../widget-library/readback_spinner.bob</file>
     <y>309</y>
@@ -64,8 +64,8 @@
     <name>Linking Container_1</name>
     <macros>
       <LABEL>I Protect</LABEL>
-      <PV_RB>$(DEVICE):PROTCURR_RB</PV_RB>
-      <PV_SP>$(DEVICE):PROTCURR_SP</PV_SP>
+      <PV_RB>$(P):$(R):PROTCURR_RB</PV_RB>
+      <PV_SP>$(P):$(R):PROTCURR_SP</PV_SP>
     </macros>
     <file>../widget-library/readback_spinner.bob</file>
     <y>342</y>
@@ -83,8 +83,8 @@
     <name>Linking Container_2</name>
     <macros>
       <LABEL>Power Max</LABEL>
-      <PV_RB>$(DEVICE):MAXPWR_RB</PV_RB>
-      <PV_SP>$(DEVICE):MAXPWR_SP</PV_SP>
+      <PV_RB>$(P):$(R):MAXPWR_RB</PV_RB>
+      <PV_SP>$(P):$(R):MAXPWR_SP</PV_SP>
     </macros>
     <file>../widget-library/readback_spinner.bob</file>
     <y>276</y>
@@ -102,8 +102,8 @@
     <name>ENABLE HV</name>
     <macros>
       <LABEL>Enable HV</LABEL>
-      <PV_RB>$(DEVICE):STATUS_RB</PV_RB>
-      <PV_SP>$(DEVICE):STATUS_SP</PV_SP>
+      <PV_RB>$(P):$(R):STATUS_RB</PV_RB>
+      <PV_SP>$(P):$(R):STATUS_SP</PV_SP>
     </macros>
     <file>../widget-library/readback_choice.bob</file>
     <y>45</y>
@@ -121,7 +121,7 @@
     <name>Linking Container_7</name>
     <macros>
       <LABEL>Status</LABEL>
-      <PV_RB>$(DEVICE):STAT_RB</PV_RB>
+      <PV_RB>$(P):$(R):STAT_RB</PV_RB>
     </macros>
     <file>../widget-library/readback.bob</file>
     <x>399</x>
@@ -140,7 +140,7 @@
     <name>Linking Container_12</name>
     <macros>
       <LABEL>Setpoint</LABEL>
-      <PV_RB>$(DEVICE):STPT_RB</PV_RB>
+      <PV_RB>$(P):$(R):STPT_RB</PV_RB>
     </macros>
     <file>../widget-library/readback_engineering.bob</file>
     <y>375</y>
@@ -158,7 +158,7 @@
     <name>Pressure_RB</name>
     <macros>
       <LABEL>Pressure</LABEL>
-      <PV_RB>$(DEVICE):PRES_RB</PV_RB>
+      <PV_RB>$(P):$(R):PRES_RB</PV_RB>
     </macros>
     <file>../widget-library/readback_engineering.bob</file>
     <y>78</y>
@@ -176,7 +176,7 @@
     <name>Temp Contr</name>
     <macros>
       <LABEL>Temp CTRL</LABEL>
-      <PV_RB>$(DEVICE):TEMPCONTR_RB</PV_RB>
+      <PV_RB>$(P):$(R):TEMPCONTR_RB</PV_RB>
     </macros>
     <file>../widget-library/readback.bob</file>
     <y>210</y>
@@ -194,7 +194,7 @@
     <name>Temp PWR</name>
     <macros>
       <LABEL>Temp PWR</LABEL>
-      <PV_RB>$(DEVICE):TEMPPWR_RB</PV_RB>
+      <PV_RB>$(P):$(R):TEMPPWR_RB</PV_RB>
     </macros>
     <file>../widget-library/readback.bob</file>
     <y>177</y>
@@ -212,7 +212,7 @@
     <name>Linking Container_23</name>
     <macros>
       <LABEL>Setpoint STS</LABEL>
-      <PV_RB>$(DEVICE):STPTSTAT_RB</PV_RB>
+      <PV_RB>$(P):$(R):STPTSTAT_RB</PV_RB>
     </macros>
     <file>../widget-library/readback.bob</file>
     <y>408</y>
@@ -230,7 +230,7 @@
     <name>Voltage_RB</name>
     <macros>
       <LABEL>Voltage</LABEL>
-      <PV_RB>$(DEVICE):VOLT_RB</PV_RB>
+      <PV_RB>$(P):$(R):VOLT_RB</PV_RB>
     </macros>
     <file>../widget-library/readback.bob</file>
     <y>111</y>
@@ -248,7 +248,7 @@
     <name>Current RB</name>
     <macros>
       <LABEL>Current</LABEL>
-      <PV_RB>$(DEVICE):CURR_RB</PV_RB>
+      <PV_RB>$(P):$(R):CURR_RB</PV_RB>
     </macros>
     <file>../widget-library/readback_engineering.bob</file>
     <y>144</y>
@@ -264,7 +264,7 @@
   </widget>
   <widget type="byte_monitor" version="2.0.0">
     <name>ERROR CODE</name>
-    <pv_name>$(DEVICE):ERRCODE_RB</pv_name>
+    <pv_name>$(P):$(R):ERRCODE_RB</pv_name>
     <x>412</x>
     <y>111</y>
     <width>205</width>
@@ -312,7 +312,7 @@
     <name>Linking Container_26</name>
     <macros>
       <LABEL>Device Num</LABEL>
-      <PV_RB>$(DEVICE):DEVNUMSTR_RB</PV_RB>
+      <PV_RB>$(P):$(R):DEVNUMSTR_RB</PV_RB>
     </macros>
     <file>../widget-library/readback_big.bob</file>
     <y>243</y>
@@ -330,8 +330,8 @@
     <name>Linking Container_32</name>
     <macros>
       <LABEL>Mode</LABEL>
-      <PV_RB>$(DEVICE):MODE_RB</PV_RB>
-      <PV_SP>$(DEVICE):MODE_SP</PV_SP>
+      <PV_RB>$(P):$(R):MODE_RB</PV_RB>
+      <PV_SP>$(P):$(R):MODE_SP</PV_SP>
     </macros>
     <file>ipcminiCtrl.opi</file>
     <y>450</y>
@@ -381,7 +381,7 @@
       <action type="open_display">
         <file>asynRecord/asynRecord.opi</file>
         <macros>
-          <P>$(DEVICE):</P>
+          <P>$(P):$(R):</P>
           <R>ASYNRECORD</R>
         </macros>
         <target>window</target>
