@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-15 23:00:28 by andreamichelotti-->
+<!--Saved on 2025-05-16 11:57:35 by andreamichelotti-->
 <display version="2.0.0">
   <name>Vacuum</name>
   <width>1600</width>
-  <height>831</height>
+  <height>900</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
@@ -27,7 +27,7 @@
     <file>$(PLTFILE)</file>
     <y>31</y>
     <width>1600</width>
-    <height>800</height>
+    <height>869</height>
     <show_toolbar>true</show_toolbar>
   </widget>
 </display>

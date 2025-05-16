@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-04-29 17:02:28 by Alex-->
+<!--Saved on 2025-05-16 14:31:26 by andreamichelotti-->
 <display version="2.0.0">
   <name>IPCMini Vacuum Controller - $(P):$(R)</name>
   <x>481</x>
@@ -15,7 +15,7 @@
   <grid_step_y>6</grid_step_y>
   <widget type="label" version="2.0.0">
     <name>Title Banner_3</name>
-    <text>IPCMini - $(P):$(R)</text>
+    <text>IPCMini - $(R)</text>
     <width>800</width>
     <height>45</height>
     <font>
@@ -336,7 +336,7 @@
     <file>ipcminiCtrl.opi</file>
     <y>450</y>
     <width>800</width>
-    <height>243</height>
+    <height>250</height>
     <resize>2</resize>
     <transparent>true</transparent>
     <actions>
@@ -379,13 +379,13 @@
     <name>Action Button</name>
     <actions>
       <action type="open_display">
+        <description>asynRecord.opi</description>
         <file>asynRecord/asynRecord.opi</file>
         <macros>
           <P>$(P):$(R):</P>
           <R>ASYNRECORD</R>
         </macros>
         <target>window</target>
-        <description>asynRecord.opi</description>
       </action>
     </actions>
     <text>asynRecord</text>
