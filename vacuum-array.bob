@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-01-31 15:25:59 by andreamichelotti-->
+<!--Saved on 2025-05-19 15:00:29 by andreamichelotti-->
 <display version="2.0.0">
   <name>vacuumArrayMain_$(LCID)</name>
   <width>419</width>
@@ -51,5 +51,20 @@
     <y>20</y>
     <width>419</width>
     <height>800</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>dumppv</name>
+    <actions>
+      <action type="execute">
+        <description>dumppv</description>
+        <script file="Scripts/dumppv.py">
+        </script>
+      </action>
+    </actions>
+    <text>dumppv</text>
+    <x>350</x>
+    <width>60</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
   </widget>
 </display>
