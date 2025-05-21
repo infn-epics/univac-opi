@@ -24,6 +24,7 @@ logger = ScriptUtil.getLogger()
 conffile = widget.getEffectiveMacros().getValue("CONFFILE")
 zoneSelector = widget.getEffectiveMacros().getValue("ZONE")
 typeSelector = widget.getEffectiveMacros().getValue("TYPE")
+wtemplate = ScriptUtil.findWidgetByName(widget, "element_template") ## name of the hidden template
 
 if zoneSelector == None:
     zoneSelector = PVUtil.getString(ScriptUtil.getPVs(widget)[0])
@@ -76,8 +77,9 @@ for device in devinfo:
     devices.append({'NAME':name,'R': device['Name'], "P": device_prefix, "TYPE": device['Type'], "ZONE": device['Zone'],"PVNAME":pvname,"OPI":opipath})
     logger.info("loading " + device['Name'])
 
-embedded_width = 410
-embedded_height = 30
+offset = 5
+embedded_width  = wtemplate.getPropertyValue("width")
+embedded_height = wtemplate.getPropertyValue("height") + offset
 
 def createInstance(x, y, macros):
     embedded = WidgetFactory.getInstance().getWidgetDescriptor("embedded").createWidget()
