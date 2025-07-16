@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-20 18:47:52 by andreamichelotti-->
+<!--Saved on 2025-07-17 01:08:52 by andreamichelotti-->
 <display version="2.0.0">
   <name>Display</name>
   <width>1380</width>
@@ -34,7 +34,7 @@
     <name>Embedded Display_24</name>
     <macros>
       <CONFFILE>../../ini/vacuum.csv</CONFFILE>
-      <TYPE>0</TYPE>
+      <TYPE>-1</TYPE>
     </macros>
     <file>vacuum-array.bob</file>
     <x>930</x>

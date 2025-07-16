@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-06-01 15:00:31 by andreamichelotti-->
+<!--Saved on 2025-07-17 01:20:20 by andreamichelotti-->
 <display version="2.0.0">
   <height>160</height>
   <background_color>
@@ -396,5 +396,27 @@ $(pv_value)</tooltip>
       <color red="100" green="100" blue="100">
       </color>
     </fallback_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Text Update Template_4</name>
+    <pv_name>$(P):$(SENSOR):PRES_RB:RAW.SCAN</pv_name>
+    <x>125</x>
+    <y>45</y>
+    <width>126</width>
+    <height>21</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Foreground" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
   </widget>
 </display>

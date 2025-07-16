@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-06-02 19:57:39 by andreamichelotti-->
+<!--Saved on 2025-07-17 01:21:07 by andreamichelotti-->
 <display version="2.0.0">
   <width>1180</width>
   <height>760</height>
@@ -386,56 +386,6 @@ $(pv_value)</tooltip>
               <color red="0" green="128" blue="255">
               </color>
             </border_color>
-          </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update Template_9</name>
-            <pv_name>$(P):SCAN-RATE.SCAN</pv_name>
-            <x>301</x>
-            <y>8</y>
-            <width>118</width>
-            <height>23</height>
-            <font>
-              <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="IO Foreground" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="IO InputPV Bg" red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-            <actions>
-            </actions>
-            <border_width>1</border_width>
-            <border_color>
-              <color name="IO Border" red="215" green="215" blue="215">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="combo" version="2.0.0">
-            <name>Pressure Update</name>
-            <pv_name>$(P):SCAN-RATE.SCAN</pv_name>
-            <x>175</x>
-            <y>7</y>
-            <width>120</width>
-            <height>25</height>
-            <font>
-              <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="IO Foreground" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="IO Grid" red="215" green="215" blue="215">
-              </color>
-            </background_color>
-            <tooltip> $(pv_name) /  $(pv_value)</tooltip>
           </widget>
           <widget type="action_button" version="3.0.0">
             <name>Trigger Button</name>
