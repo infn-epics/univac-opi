@@ -4,6 +4,9 @@
   <name>VacuumChannel</name>
   <width>410</width>
   <height>30</height>
+  <macros>
+  <PVNAME>PRES_RB</PVNAME>
+  </macros>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_5</name>
     <x>129</x>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-20 18:47:04 by andreamichelotti-->
+<!--Saved on 2025-07-19 22:55:54 by andreamichelotti-->
 <display version="2.0.0">
-  <name>vacuumArrayMain_$(LCID)</name>
-  <width>430</width>
+  <name>vacuum Array</name>
+  <width>450</width>
   <height>590</height>
   <actions execute_as_one="true">
   </actions>
@@ -47,7 +47,7 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>vacuumArray_$(LCID)</name>
-    <file>vacuum_display.bob</file>
+    <file>vac_display.bob</file>
     <y>20</y>
     <width>430</width>
     <height>570</height>

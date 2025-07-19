@@ -33,10 +33,11 @@
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_24</name>
     <macros>
-      <CONFFILE>../../ini/vacuum.csv</CONFFILE>
-      <TYPE>-1</TYPE>
+      <CONFFILE>../../../deploy/values.yaml</CONFFILE>
+      <TYPE>ALL</TYPE>
+      <GROUP>vac</GROUP>
     </macros>
-    <file>vacuum-array.bob</file>
+    <file>vac_array.bob</file>
     <x>930</x>
     <y>31</y>
     <width>450</width>

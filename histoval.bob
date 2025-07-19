@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-16 13:46:23 by andreamichelotti-->
+<!--Saved on 2025-07-19 23:12:29 by andreamichelotti-->
 <display version="2.0.0">
   <name>Display</name>
   <width>570</width>
@@ -46,7 +46,7 @@
     <traces>
       <trace>
         <name>$(traces[0].y_pv)</name>
-        <y_pv>$(P):$(R):press_RB</y_pv>
+        <y_pv>$(P):$(R):PRES_RB</y_pv>
         <axis>0</axis>
         <trace_type>1</trace_type>
         <color>
@@ -54,21 +54,7 @@
           </color>
         </color>
         <line_width>1</line_width>
-        <point_type>2</point_type>
-        <point_size>10</point_size>
-        <visible>true</visible>
-      </trace>
-      <trace>
-        <name>$(traces[1].y_pv)</name>
-        <y_pv>$(P):$(R):press_RB.HIGH</y_pv>
-        <axis>0</axis>
-        <trace_type>1</trace_type>
-        <color>
-          <color red="255" green="0" blue="0">
-          </color>
-        </color>
-        <line_width>10</line_width>
-        <point_type>2</point_type>
+        <point_type>0</point_type>
         <point_size>10</point_size>
         <visible>true</visible>
       </trace>
