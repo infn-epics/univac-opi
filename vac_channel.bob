@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-19 15:13:46 by andreamichelotti-->
 <display version="2.0.0">
   <name>VacuumChannel</name>
+  <macros>
+    <PVNAME>PRES_RB</PVNAME>
+  </macros>
   <width>410</width>
   <height>30</height>
-  <macros>
-  <PVNAME>PRES_RB</PVNAME>
-  </macros>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_5</name>
     <x>129</x>
@@ -59,7 +58,7 @@
   </widget>
   <widget type="symbol" version="2.0.0">
     <name>Mode_1</name>
-    <pv_name>loc://$(P):$(R)_TYPE&lt;VLong&gt;($(TYPE))</pv_name>
+    <pv_name>loc://$(P):$(R)_TYPE&lt;VLong&gt;($(FUNC))</pv_name>
     <symbols>
       <symbol>img/ionpump.svg</symbol>
       <symbol>img/ccg.svg</symbol>
@@ -100,7 +99,6 @@
         <target>window</target>
       </action>
     </actions>
-    <pv_name>loc://control_$(LCID)&lt;VString&gt;("$(OPI)")</pv_name>
     <text>Ctrl</text>
     <x>350</x>
     <y>5</y>
