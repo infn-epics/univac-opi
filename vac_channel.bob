@@ -99,7 +99,6 @@
         <target>window</target>
       </action>
     </actions>
-    <pv_name>loc://control_$(LCID)&lt;VString&gt;("$(OPI)")</pv_name>
     <text>Ctrl</text>
     <x>350</x>
     <y>5</y>
