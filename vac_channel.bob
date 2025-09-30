@@ -8,8 +8,8 @@
   <height>30</height>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_5</name>
-    <x>129</x>
-    <width>221</width>
+    <x>100</x>
+    <width>250</width>
     <height>30</height>
     <line_width>1</line_width>
     <line_color>
@@ -24,17 +24,17 @@
   <widget type="textupdate" version="2.0.0">
     <name>PressureReadout</name>
     <pv_name>$(P):$(R):$(PVNAME)</pv_name>
-    <x>134</x>
+    <x>110</x>
     <y>6</y>
     <width>95</width>
-    <format>3</format>
-    <precision>3</precision>
+    <format>2</format>
+    <precision>2</precision>
     <show_units>false</show_units>
     <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_4</name>
-    <width>129</width>
     <height>30</height>
     <line_width>1</line_width>
     <line_color>
@@ -50,11 +50,13 @@
     <name>SensorName</name>
     <text>$(NAME)</text>
     <y>6</y>
-    <width>125</width>
+    <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
   </widget>
   <widget type="symbol" version="2.0.0">
     <name>Mode_1</name>
@@ -64,8 +66,8 @@
       <symbol>img/ccg.svg</symbol>
       <symbol>img/pig.svg</symbol>
     </symbols>
-    <x>238</x>
-    <y>3</y>
+    <x>205</x>
+    <y>6</y>
     <width>40</width>
     <height>23</height>
     <actions>
@@ -82,13 +84,14 @@
   <widget type="label" version="2.0.0">
     <name>Label_12</name>
     <text>$(ZONE)</text>
-    <x>288</x>
-    <y>5</y>
+    <x>245</x>
+    <y>6</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <horizontal_alignment>2</horizontal_alignment>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>CustomControl</name>
