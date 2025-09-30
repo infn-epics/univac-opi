@@ -9,7 +9,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_5</name>
     <x>100</x>
-    <width>250</width>
+    <width>270</width>
     <height>30</height>
     <line_width>1</line_width>
     <line_color>
@@ -26,7 +26,7 @@
     <pv_name>$(P):$(R):$(PVNAME)</pv_name>
     <x>110</x>
     <y>6</y>
-    <width>95</width>
+    <width>80</width>
     <format>2</format>
     <precision>2</precision>
     <show_units>false</show_units>
@@ -66,7 +66,7 @@
       <symbol>img/ccg.svg</symbol>
       <symbol>img/pig.svg</symbol>
     </symbols>
-    <x>205</x>
+    <x>236</x>
     <y>6</y>
     <width>40</width>
     <height>23</height>
@@ -84,7 +84,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_12</name>
     <text>$(ZONE)</text>
-    <x>245</x>
+    <x>270</x>
     <y>6</y>
     <width>90</width>
     <font>
@@ -103,9 +103,9 @@
       </action>
     </actions>
     <text>Ctrl</text>
-    <x>350</x>
+    <x>370</x>
     <y>5</y>
-    <width>60</width>
+    <width>40</width>
     <height>20</height>
     <rules>
       <rule name="Enable" prop_id="visible" out_exp="false">
@@ -119,5 +119,20 @@
       </rule>
     </rules>
     <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>PressureReadout_1</name>
+    <pv_name>$(P):$(R):STPTSTAT_RB</pv_name>
+    <x>200</x>
+    <y>6</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
   </widget>
 </display>
