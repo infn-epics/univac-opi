@@ -26,7 +26,7 @@
     <name>PressureReadout</name>
     <pv_name>$(P):$(R):$(PVNAME)</pv_name>
     <x>110</x>
-    <y>6</y>
+    <y>5</y>
     <width>80</width>
     <format>2</format>
     <precision>2</precision>
@@ -50,7 +50,7 @@
   <widget type="label" version="2.0.0">
     <name>SensorName</name>
     <text>$(NAME)</text>
-    <y>6</y>
+    <y>4</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -67,9 +67,9 @@
       <symbol>img/ccg.svg</symbol>
       <symbol>img/pig.svg</symbol>
     </symbols>
-    <x>236</x>
-    <y>6</y>
-    <width>40</width>
+    <x>244</x>
+    <y>4</y>
+    <width>30</width>
     <height>23</height>
     <actions>
       <action type="open_display">
@@ -125,7 +125,7 @@
     <name>PressureReadout_1</name>
     <pv_name>$(P):$(R):$(PVSTATE)</pv_name>
     <x>200</x>
-    <y>6</y>
+    <y>5</y>
     <width>40</width>
     <font>
       <font family="Liberation Sans" style="BOLD" size="14.0">

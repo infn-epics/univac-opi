@@ -17,8 +17,8 @@
   <widget type="label" version="2.0.0">
     <name>Label_12</name>
     <text>Value</text>
-    <x>134</x>
-    <width>56</width>
+    <x>130</x>
+    <width>50</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
@@ -27,8 +27,8 @@
   <widget type="label" version="2.0.0">
     <name>Label_13</name>
     <text>Type</text>
-    <x>235</x>
-    <width>52</width>
+    <x>244</x>
+    <width>35</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
@@ -37,7 +37,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_14</name>
     <text>Zone</text>
-    <x>289</x>
+    <x>309</x>
     <width>40</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -65,5 +65,16 @@
     <width>60</width>
     <height>20</height>
     <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_15</name>
+    <text>Status</text>
+    <x>190</x>
+    <width>50</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
   </widget>
 </display>
