@@ -108,17 +108,6 @@
     <y>5</y>
     <width>40</width>
     <height>20</height>
-    <rules>
-      <rule name="Enable" prop_id="visible" out_exp="false">
-        <exp bool_exp="pvStr0!=&quot;&quot;">
-          <value>true</value>
-        </exp>
-        <exp bool_exp="pvStr0==&quot;&quot;">
-          <value>false</value>
-        </exp>
-        <pv_name>$(pv_name)</pv_name>
-      </rule>
-    </rules>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
