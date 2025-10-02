@@ -121,9 +121,8 @@
     </rules>
     <tooltip>$(actions)</tooltip>
   </widget>
-  <widget type="textupdate" version="2.0.0">
+  <widget type="label" version="2.0.0">
     <name>PressureReadout_1</name>
-    <pv_name>$(P):$(R):$(PVSTATE)</pv_name>
     <x>200</x>
     <y>5</y>
     <width>40</width>
@@ -131,7 +130,17 @@
       <font family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
     <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
+    <scripts>
+      <script file="Scripts/ErrStpIndicator.py">
+        <pv_name>$(P):$(R):$(PVNAME)</pv_name>
+      </script>
+    </scripts>
   </widget>
 </display>

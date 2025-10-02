@@ -27,7 +27,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_13</name>
     <text>Type</text>
-    <x>244</x>
+    <x>247</x>
     <width>35</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -69,7 +69,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_15</name>
     <text>Status</text>
-    <x>190</x>
+    <x>192</x>
     <width>50</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
