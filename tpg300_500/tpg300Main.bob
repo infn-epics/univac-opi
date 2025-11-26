@@ -298,7 +298,7 @@ $(pv_value)</tooltip>
             <macros>
               <SENSOR>A1</SENSOR>
             </macros>
-            <file>tpg300Sensor.opi</file>
+            <file>tpg300Sensor.bob</file>
             <y>90</y>
             <width>800</width>
             <height>160</height>
@@ -316,7 +316,7 @@ $(pv_value)</tooltip>
             <macros>
               <SENSOR>A2</SENSOR>
             </macros>
-            <file>tpg300Sensor.opi</file>
+            <file>tpg300Sensor.bob</file>
             <y>250</y>
             <width>800</width>
             <height>160</height>
@@ -334,7 +334,7 @@ $(pv_value)</tooltip>
             <macros>
               <SENSOR>B1</SENSOR>
             </macros>
-            <file>tpg300Sensor.opi</file>
+            <file>tpg300Sensor.bob</file>
             <y>410</y>
             <width>800</width>
             <height>160</height>
@@ -352,7 +352,7 @@ $(pv_value)</tooltip>
             <macros>
               <SENSOR>B2</SENSOR>
             </macros>
-            <file>tpg300Sensor.opi</file>
+            <file>tpg300Sensor.bob</file>
             <y>570</y>
             <width>800</width>
             <height>160</height>
@@ -455,7 +455,7 @@ $(pv_value)</tooltip>
             <macros>
               <FUNCTION>1</FUNCTION>
             </macros>
-            <file>tpg300Function.opi</file>
+            <file>tpg300Function.bob</file>
             <y>35</y>
             <width>800</width>
             <height>95</height>
@@ -473,7 +473,7 @@ $(pv_value)</tooltip>
             <macros>
               <FUNCTION>2</FUNCTION>
             </macros>
-            <file>tpg300Function.opi</file>
+            <file>tpg300Function.bob</file>
             <y>155</y>
             <width>800</width>
             <height>95</height>
@@ -491,7 +491,7 @@ $(pv_value)</tooltip>
             <macros>
               <FUNCTION>3</FUNCTION>
             </macros>
-            <file>tpg300Function.opi</file>
+            <file>tpg300Function.bob</file>
             <y>275</y>
             <width>800</width>
             <height>95</height>
@@ -509,7 +509,7 @@ $(pv_value)</tooltip>
             <macros>
               <FUNCTION>4</FUNCTION>
             </macros>
-            <file>tpg300Function.opi</file>
+            <file>tpg300Function.bob</file>
             <y>395</y>
             <width>800</width>
             <height>95</height>
@@ -527,7 +527,7 @@ $(pv_value)</tooltip>
             <macros>
               <FUNCTION>A</FUNCTION>
             </macros>
-            <file>tpg300Function.opi</file>
+            <file>tpg300Function.bob</file>
             <y>515</y>
             <width>800</width>
             <height>95</height>
@@ -545,7 +545,7 @@ $(pv_value)</tooltip>
             <macros>
               <FUNCTION>B</FUNCTION>
             </macros>
-            <file>tpg300Function.opi</file>
+            <file>tpg300Function.bob</file>
             <y>635</y>
             <width>800</width>
             <height>95</height>

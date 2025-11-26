@@ -1,4 +1,4 @@
-importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
+importPackage(Packages.org.csstudio.bobbuilder.scriptUtil);
 
 var macroInput = DataUtil.createMacrosInput(true);
 var TPG300DeviceName = PVUtil.getString(pvArray[0]);
