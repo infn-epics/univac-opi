@@ -42,7 +42,7 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Linking Container Template</name>
-    <file>tpg300Main.opi</file>
+    <file>tpg300Main.bob</file>
     <y>50</y>
     <width>1180</width>
     <height>760</height>
@@ -62,7 +62,7 @@
       </rule>
       <rule name="SetOPIRule" prop_id="opi_file" out_exp="false">
         <exp bool_exp="true">
-          <value>tpg300Main.opi</value>
+          <value>tpg300Main.bob</value>
         </exp>
         <pv_name>loc://TPG300DeviceName</pv_name>
       </rule>
