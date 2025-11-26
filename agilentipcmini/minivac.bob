@@ -97,7 +97,7 @@
       <PV_RB>$(P):$(R):MA</PV_RB>
     </macros>
     <name>CURRENT_1MA</name>
-    <opi_file>/opt/epics/boy/gui-lib/opi/widget-library/readback_engineering.opi</opi_file>
+    <opi_file>widget-library/readback_engineering.opi</opi_file>
     <resize_behaviour>1</resize_behaviour>
     <rules />
     <scale_options>
@@ -140,7 +140,7 @@
       <PV_SP>$(P):$(R):PWR</PV_SP>
     </macros>
     <name>ENABLE_HV</name>
-    <opi_file>/opt/epics/boy/gui-lib/opi/widget-library/readback_choice.opi</opi_file>
+    <opi_file>widget-library/readback_choice.opi</opi_file>
     <resize_behaviour>1</resize_behaviour>
     <rules />
     <scale_options>
@@ -182,7 +182,7 @@
       <PV_RB>$(P):$(R):MA10</PV_RB>
     </macros>
     <name>CURRENT_10MA</name>
-    <opi_file>/opt/epics/boy/gui-lib/opi/widget-library/readback_engineering.opi</opi_file>
+    <opi_file>widget-library/readback_engineering.opi</opi_file>
     <resize_behaviour>1</resize_behaviour>
     <rules />
     <scale_options>
@@ -224,7 +224,7 @@
       <PV_RB>$(P):$(R):KV</PV_RB>
     </macros>
     <name>VOLTAGE</name>
-    <opi_file>/opt/epics/boy/gui-lib/opi/widget-library/readback_engineering.opi</opi_file>
+    <opi_file>widget-library/readback_engineering.opi</opi_file>
     <resize_behaviour>1</resize_behaviour>
     <rules />
     <scale_options>

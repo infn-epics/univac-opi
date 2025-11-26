@@ -48,7 +48,7 @@
       <PV_RB>$(P):$(R):VOLTTGT_RB</PV_RB>
       <PV_SP>$(P):$(R):VOLTTGT_SP</PV_SP>
     </macros>
-    <file>../widget-library/readback_spinner.bob</file>
+    <file>widget-library/readback_spinner.bob</file>
     <y>309</y>
     <height>32</height>
     <resize>2</resize>
@@ -67,7 +67,7 @@
       <PV_RB>$(P):$(R):PROTCURR_RB</PV_RB>
       <PV_SP>$(P):$(R):PROTCURR_SP</PV_SP>
     </macros>
-    <file>../widget-library/readback_spinner.bob</file>
+    <file>widget-library/readback_spinner.bob</file>
     <y>342</y>
     <height>32</height>
     <resize>2</resize>
@@ -86,7 +86,7 @@
       <PV_RB>$(P):$(R):MAXPWR_RB</PV_RB>
       <PV_SP>$(P):$(R):MAXPWR_SP</PV_SP>
     </macros>
-    <file>../widget-library/readback_spinner.bob</file>
+    <file>widget-library/readback_spinner.bob</file>
     <y>276</y>
     <height>32</height>
     <resize>2</resize>
@@ -105,7 +105,7 @@
       <PV_RB>$(P):$(R):STATUS_RB</PV_RB>
       <PV_SP>$(P):$(R):STATUS_SP</PV_SP>
     </macros>
-    <file>../widget-library/readback_choice.bob</file>
+    <file>widget-library/readback_choice.bob</file>
     <y>45</y>
     <height>34</height>
     <resize>2</resize>
@@ -123,7 +123,7 @@
       <LABEL>Status</LABEL>
       <PV_RB>$(P):$(R):STAT_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback.bob</file>
+    <file>widget-library/readback.bob</file>
     <x>399</x>
     <y>45</y>
     <height>34</height>
@@ -142,7 +142,7 @@
       <LABEL>Setpoint</LABEL>
       <PV_RB>$(P):$(R):STPT_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback_engineering.bob</file>
+    <file>widget-library/readback_engineering.bob</file>
     <y>375</y>
     <height>34</height>
     <resize>2</resize>
@@ -160,7 +160,7 @@
       <LABEL>Pressure</LABEL>
       <PV_RB>$(P):$(R):PRES_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback_engineering.bob</file>
+    <file>widget-library/readback_engineering.bob</file>
     <y>78</y>
     <height>34</height>
     <resize>2</resize>
@@ -178,7 +178,7 @@
       <LABEL>Temp CTRL</LABEL>
       <PV_RB>$(P):$(R):TEMPCONTR_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback.bob</file>
+    <file>widget-library/readback.bob</file>
     <y>210</y>
     <height>34</height>
     <resize>2</resize>
@@ -196,7 +196,7 @@
       <LABEL>Temp PWR</LABEL>
       <PV_RB>$(P):$(R):TEMPPWR_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback.bob</file>
+    <file>widget-library/readback.bob</file>
     <y>177</y>
     <height>34</height>
     <resize>2</resize>
@@ -214,7 +214,7 @@
       <LABEL>Setpoint STS</LABEL>
       <PV_RB>$(P):$(R):STPTSTAT_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback.bob</file>
+    <file>widget-library/readback.bob</file>
     <y>408</y>
     <height>34</height>
     <resize>2</resize>
@@ -232,7 +232,7 @@
       <LABEL>Voltage</LABEL>
       <PV_RB>$(P):$(R):VOLT_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback.bob</file>
+    <file>widget-library/readback.bob</file>
     <y>111</y>
     <height>34</height>
     <resize>2</resize>
@@ -250,7 +250,7 @@
       <LABEL>Current</LABEL>
       <PV_RB>$(P):$(R):CURR_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback_engineering.bob</file>
+    <file>widget-library/readback_engineering.bob</file>
     <y>144</y>
     <height>34</height>
     <resize>2</resize>
@@ -314,7 +314,7 @@
       <LABEL>Device Num</LABEL>
       <PV_RB>$(P):$(R):DEVNUMSTR_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback_big.bob</file>
+    <file>widget-library/readback_big.bob</file>
     <y>243</y>
     <height>34</height>
     <resize>2</resize>

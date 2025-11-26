@@ -47,7 +47,7 @@
       <LABEL>Baud Rate</LABEL>
       <PV_RB>$(P):$(R):BAUDRATE_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback.bob</file>
+    <file>widget-library/readback.bob</file>
     <x>399</x>
     <y>77</y>
     <height>34</height>
@@ -66,7 +66,7 @@
       <LABEL>Model</LABEL>
       <PV_RB>$(P):$(R):MODEL_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback_big.bob</file>
+    <file>widget-library/readback_big.bob</file>
     <y>209</y>
     <height>34</height>
     <resize>2</resize>
@@ -84,7 +84,7 @@
       <LABEL>Serial Number</LABEL>
       <PV_RB>$(P):$(R):SERNUM_RB</PV_RB>
     </macros>
-    <file>../widget-library/readback.bob</file>
+    <file>widget-library/readback.bob</file>
     <x>399</x>
     <y>44</y>
     <height>34</height>
@@ -104,7 +104,7 @@
       <PV_RB>$(P):$(R):UNIT_RB</PV_RB>
       <PV_SP>$(P):$(R):UNIT_SP</PV_SP>
     </macros>
-    <file>../widget-library/readback_menu.bob</file>
+    <file>widget-library/readback_menu.bob</file>
     <y>44</y>
     <height>34</height>
     <resize>2</resize>
@@ -123,7 +123,7 @@
       <PV_RB>$(P):$(R):AUTOSTART_RB</PV_RB>
       <PV_SP>$(P):$(R):AUTOSTART_SP</PV_SP>
     </macros>
-    <file>../widget-library/readback_menu.bob</file>
+    <file>widget-library/readback_menu.bob</file>
     <y>77</y>
     <height>34</height>
     <resize>2</resize>
@@ -142,7 +142,7 @@
       <PV_RB>$(P):$(R):PROTSTS_RB</PV_RB>
       <PV_SP>$(P):$(R):PROTSTS_SP</PV_SP>
     </macros>
-    <file>../widget-library/readback_menu.bob</file>
+    <file>widget-library/readback_menu.bob</file>
     <y>110</y>
     <height>34</height>
     <resize>2</resize>
@@ -161,7 +161,7 @@
       <PV_RB>$(P):$(R):FIXEDSTEP_RB</PV_RB>
       <PV_SP>$(P):$(R):FIXEDSTEP_SP</PV_SP>
     </macros>
-    <file>../widget-library/readback_menu.bob</file>
+    <file>widget-library/readback_menu.bob</file>
     <y>143</y>
     <height>34</height>
     <resize>2</resize>
@@ -180,7 +180,7 @@
       <PV_RB>$(P):$(R):LABEL_RB</PV_RB>
       <PV_SP>$(P):$(R):LABEL_SP</PV_SP>
     </macros>
-    <file>../widget-library/readback_setpoint.bob</file>
+    <file>widget-library/readback_setpoint.bob</file>
     <y>176</y>
     <height>34</height>
     <resize>2</resize>
@@ -198,7 +198,7 @@
       <LABEL>ComError</LABEL>
       <PV_RB>$(P):$(R):COMERR</PV_RB>
     </macros>
-    <file>../widget-library/readback_big.bob</file>
+    <file>widget-library/readback_big.bob</file>
     <x>399</x>
     <y>110</y>
     <height>34</height>
@@ -218,7 +218,7 @@
       <PV_RB>$(P):$(R):MODE_RB</PV_RB>
       <PV_SP>$(P):$(R):MODE_SP</PV_SP>
     </macros>
-    <file>../widget-library/readback_menu.bob</file>
+    <file>widget-library/readback_menu.bob</file>
     <x>399</x>
     <y>143</y>
     <height>34</height>
@@ -237,7 +237,7 @@
       <LABEL>ComError</LABEL>
       <PV_RST>$(P):$(R):COMERR</PV_RST>
     </macros>
-    <file>widgets/comErrorRst.opi</file>
+    <file>widget-library/comErrorRst.bob</file>
     <x>399</x>
     <y>176</y>
     <width>399</width>
