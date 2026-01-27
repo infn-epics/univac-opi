@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-27 10:56:27 by michelottilabs-->
+<!--Saved on 2026-01-27 16:36:12 by michelottilabs-->
 <display version="2.0.0">
   <name>Display</name>
-  <width>1380</width>
-  <height>730</height>
+  <width>2210</width>
+  <height>831</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
@@ -47,8 +47,8 @@
     <file>vac_array.bob</file>
     <x>930</x>
     <y>31</y>
-    <width>450</width>
-    <height>659</height>
+    <width>480</width>
+    <height>699</height>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button</name>
@@ -62,5 +62,13 @@
     <x>180</x>
     <width>320</width>
     <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture</name>
+    <file>$(IMGFILE)</file>
+    <x>1410</x>
+    <y>31</y>
+    <width>340</width>
+    <height>720</height>
   </widget>
 </display>
