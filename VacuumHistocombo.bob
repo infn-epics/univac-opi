@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-27 16:36:12 by michelottilabs-->
+<!--Saved on 2026-01-27 17:50:08 by michelottilabs-->
 <display version="2.0.0">
   <name>Display</name>
-  <width>2210</width>
-  <height>831</height>
+  <width>1750</width>
+  <height>751</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
@@ -65,10 +65,23 @@
   </widget>
   <widget type="picture" version="2.0.0">
     <name>Picture</name>
+    <pv_name>$(IMGFILE="")</pv_name>
+
     <file>$(IMGFILE)</file>
-    <x>1410</x>
+    <x>1350</x>
     <y>31</y>
     <width>340</width>
-    <height>720</height>
+    <height>664</height>
+    <rules>
+      <rule name="disable" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvStr0!=&quot;&quot;">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pvStr0==&quot;&quot;">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
   </widget>
 </display>
