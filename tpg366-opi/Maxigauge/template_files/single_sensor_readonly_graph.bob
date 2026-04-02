@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-03-30 19:05:32 by valentinadompe-->
+<!--Saved on 2026-04-02 11:26:27 by valentinadompe-->
 <display version="2.0.0">
   <name>single_sensor_readonly_graph</name>
   <macros>
@@ -95,12 +95,12 @@
     </actions>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_14</name>
-      <pv_name>$(CONTROLLER):PRESSURE$(CH)</pv_name>
-      <x>492</x>
+      <pv_name>$(CONTROLLER):$(GAU):PRESSURE</pv_name>
+      <x>460</x>
       <y>70</y>
-      <width>147</width>
+      <width>105</width>
       <height>26</height>
-      <format>3</format>
+      <format>2</format>
       <precision>3</precision>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -126,14 +126,14 @@
     </widget>
     <widget type="group" version="3.0.0">
       <name>Status</name>
-      <x>88</x>
-      <y>57</y>
-      <width>256</width>
+      <x>117</x>
+      <y>56</y>
+      <width>209</width>
       <height>83</height>
       <transparent>true</transparent>
       <widget type="multi_state_led" version="2.0.0">
         <name>LED (Multi State)_2</name>
-        <pv_name>$(CONTROLLER):ONOFFG$(CH)</pv_name>
+        <pv_name>$(CONTROLLER):$(GAU):ONOFFG</pv_name>
         <x>19</x>
         <y>4</y>
         <width>45</width>
@@ -167,10 +167,10 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_49</name>
-        <pv_name>$(CONTROLLER):STATUS$(CH)</pv_name>
-        <x>87</x>
+        <pv_name>$(CONTROLLER):$(GAU):STATUS</pv_name>
+        <x>74</x>
         <y>13</y>
-        <width>116</width>
+        <width>87</width>
         <height>26</height>
         <horizontal_alignment>1</horizontal_alignment>
         <vertical_alignment>1</vertical_alignment>
@@ -197,10 +197,10 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_50</name>
-      <pv_name>$(CONTROLLER):TYPE$(CH)</pv_name>
-      <x>492</x>
+      <pv_name>$(CONTROLLER):$(GAU):GAUGE-TYPE</pv_name>
+      <x>477</x>
       <y>99</y>
-      <width>147</width>
+      <width>105</width>
       <height>26</height>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -230,7 +230,7 @@
       <traces>
         <trace>
           <name>$(traces[0].y_pv)</name>
-          <y_pv>$(CONTROLLER):PRESSURE$(CH)</y_pv>
+          <y_pv>$(CONTROLLER):$(GAU):PRESSURE</y_pv>
           <axis>0</axis>
           <trace_type>1</trace_type>
           <color>
@@ -249,7 +249,7 @@
       <macros>
         <GAU>$(GAU)</GAU>
       </macros>
-      <text>&lt;$(CONTROLLER):SENSOR$(CH)-NAME&gt; - &lt;$(GAU)&gt;</text>
+      <text>TPG366 $(CONTROLLER) - GAUGE $(GAU)</text>
       <x>207</x>
       <y>17</y>
       <width>420</width>
