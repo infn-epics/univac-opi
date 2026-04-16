@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-04-16 10:53:11 by riccardoesposito-->
 <display version="2.0.0">
   <name>vacuum Array</name>
-  <width>460</width>
+  <width>360</width>
   <height>610</height>
   <actions execute_as_one="true">
   </actions>
@@ -34,21 +35,11 @@
       </font>
     </font>
   </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_14</name>
-    <text>Zone</text>
-    <x>309</x>
-    <width>40</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-  </widget>
   <widget type="embedded" version="2.0.0">
     <name>vacuumArray_$(LCID)</name>
     <file>vac_display.bob</file>
     <y>20</y>
-    <width>460</width>
+    <width>330</width>
     <height>590</height>
   </widget>
   <widget type="action_button" version="3.0.0">
@@ -61,7 +52,7 @@
       </action>
     </actions>
     <text>dumppv</text>
-    <x>350</x>
+    <x>300</x>
     <width>60</width>
     <height>20</height>
     <tooltip>$(actions)</tooltip>

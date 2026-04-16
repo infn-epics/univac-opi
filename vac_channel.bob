@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-12-02 15:09:08 by andreamichelotti-->
+<!--Saved on 2026-04-16 10:45:27 by riccardoesposito-->
 <display version="2.0.0">
   <name>VacuumChannel</name>
   <macros>
     <PVNAME>PRES_RB</PVNAME>
     <PVSTATE>STATE_RB</PVSTATE>
   </macros>
-  <width>410</width>
+  <width>314</width>
   <height>30</height>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_5</name>
     <x>100</x>
-    <width>270</width>
+    <width>174</width>
     <height>30</height>
     <line_width>1</line_width>
     <line_color>
@@ -83,18 +83,6 @@
     <tooltip>Open Graph</tooltip>
     <fallback_symbol>img/gas.svg</fallback_symbol>
   </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_12</name>
-    <text>$(ZONE)</text>
-    <x>270</x>
-    <y>6</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <horizontal_alignment>2</horizontal_alignment>
-  </widget>
   <widget type="action_button" version="3.0.0">
     <name>CustomControl</name>
     <actions>
@@ -105,8 +93,8 @@
       </action>
     </actions>
     <text>Ctrl</text>
-    <x>370</x>
-    <y>5</y>
+    <x>274</x>
+    <y>4</y>
     <width>40</width>
     <height>20</height>
     <tooltip>$(actions)</tooltip>
