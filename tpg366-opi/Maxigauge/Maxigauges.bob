@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-03-30 18:41:35 by valentinadompe-->
+<!--Saved on 2026-04-23 10:09:00 by valentinadompe-->
 <display version="2.0.0">
   <name>Maxigauges</name>
   <width>1110</width>
@@ -12,11 +12,11 @@
     <name>Tabbed Container</name>
     <macros>
       <BL>LPQ</BL>
-      <CONTROLLER>tpg366</CONTROLLER>
+      <CONTROLLER>$(CONTROLLER)</CONTROLLER>
     </macros>
     <tabs>
       <tab>
-        <name>tpg1</name>
+        <name>$(CONTROLLER)</name>
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Linking Container_5</name>

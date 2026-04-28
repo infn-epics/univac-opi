@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-03-30 18:48:12 by valentinadompe-->
+<!--Saved on 2026-04-28 15:02:17 by valentinadompe-->
 <display version="2.0.0">
   <name>single_sensor_readonly</name>
   <width>350</width>
@@ -115,14 +115,14 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Channel $(CH)</name>
-    <width>313</width>
+    <width>315</width>
     <height>220</height>
     <transparent>true</transparent>
     <actions>
     </actions>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_14</name>
-      <pv_name>$(CONTROLLER):PRESSURE$(CH)</pv_name>
+      <pv_name>$(CONTROLLER):$(GAU$(CH)):PRESSURE</pv_name>
       <x>112</x>
       <y>124</y>
       <width>147</width>
@@ -139,21 +139,6 @@
         </color>
       </border_color>
     </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_30</name>
-      <pv_name>$(GAU)</pv_name>
-      <x>160</x>
-      <y>9</y>
-      <height>18</height>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <background_color>
-        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
-        </color>
-      </background_color>
-    </widget>
     <widget type="label" version="2.0.0">
       <name>Label_23</name>
       <text>Pressure:</text>
@@ -168,14 +153,14 @@
     </widget>
     <widget type="group" version="3.0.0">
       <name>Status</name>
-      <x>10</x>
+      <x>13</x>
       <y>35</y>
       <width>256</width>
       <height>83</height>
       <transparent>true</transparent>
       <widget type="multi_state_led" version="2.0.0">
         <name>LED (Multi State)_2</name>
-        <pv_name>$(CONTROLLER):ONOFFG$(CH)</pv_name>
+        <pv_name>$(CONTROLLER):$(GAU$(CH)):ONOFFG</pv_name>
         <x>19</x>
         <y>4</y>
         <width>45</width>
@@ -209,7 +194,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_49</name>
-        <pv_name>$(CONTROLLER):STATUS$(CH)</pv_name>
+        <pv_name>$(CONTROLLER):$(GAU$(CH)):STATUS</pv_name>
         <x>87</x>
         <y>13</y>
         <width>116</width>
@@ -239,7 +224,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_47</name>
-      <pv_name>$(CONTROLLER):TYPE$(CH)</pv_name>
+      <pv_name>$(CONTROLLER):$(GAU$(CH)):GAUGE-TYPE</pv_name>
       <x>112</x>
       <y>153</y>
       <width>147</width>
@@ -247,24 +232,20 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_3</name>
-      <pv_name>$(CONTROLLER):SENSOR$(CH)-NAME</pv_name>
-      <x>22</x>
+    <widget type="label" version="2.0.0">
+      <name>Label_26</name>
+      <macros>
+        <GAU>$(GAU)</GAU>
+      </macros>
+      <text>TPG366 $(CONTROLLER) - $(GAU$(CH))</text>
+      <x>1</x>
       <y>9</y>
-      <width>125</width>
+      <width>325</width>
+      <height>25</height>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
-      <transparent>true</transparent>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_3</name>
-      <text>-</text>
-      <x>150</x>
-      <y>9</y>
-      <width>10</width>
     </widget>
   </widget>
 </display>
