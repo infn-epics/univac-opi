@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>Varian MidiVac</name>
-  <macros>
-  </macros>
   <width>620</width>
   <height>900</height>
   <actions>
@@ -81,7 +79,7 @@
   <widget type="label" version="2.0.0">
     <name>VoltLabel</name>
     <text>Voltage</text>
-    <x>30</x>
+    <x>15</x>
     <y>110</y>
     <width>120</width>
     <height>25</height>
@@ -93,8 +91,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Voltage</name>
     <pv_name>$(P):$(R):Voltage-Sts</pv_name>
-    <x>160</x>
-    <y>108</y>
+    <x>74</x>
+    <y>110</y>
     <width>120</width>
     <height>30</height>
     <font>
@@ -118,21 +116,9 @@
     </border_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>VoltUnit</name>
-    <text>kV</text>
-    <x>285</x>
-    <y>110</y>
-    <width>30</width>
-    <height>25</height>
-    <foreground_color>
-      <color red="150" green="150" blue="150">
-      </color>
-    </foreground_color>
-  </widget>
-  <widget type="label" version="2.0.0">
     <name>CurrLabel</name>
     <text>Current</text>
-    <x>340</x>
+    <x>208</x>
     <y>110</y>
     <width>80</width>
     <height>25</height>
@@ -144,9 +130,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Current</name>
     <pv_name>$(P):$(R):Current-Sts</pv_name>
-    <x>420</x>
-    <y>108</y>
-    <width>140</width>
+    <x>281</x>
+    <y>110</y>
+    <width>110</width>
     <height>30</height>
     <font>
       <font name="Value" family="Liberation Sans" style="BOLD" size="16.0">
@@ -160,7 +146,7 @@
       <color red="20" green="25" blue="35">
       </color>
     </background_color>
-    <format>4</format>
+    <format>2</format>
     <precision>2</precision>
     <horizontal_alignment>2</horizontal_alignment>
     <border_width>1</border_width>
@@ -168,18 +154,6 @@
       <color red="60" green="70" blue="90">
       </color>
     </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>CurrUnit</name>
-    <text>A</text>
-    <x>565</x>
-    <y>110</y>
-    <width>30</width>
-    <height>25</height>
-    <foreground_color>
-      <color red="150" green="150" blue="150">
-      </color>
-    </foreground_color>
   </widget>
   <widget type="label" version="2.0.0">
     <name>SectionHV</name>
@@ -663,7 +637,8 @@
       <color red="20" green="25" blue="35">
       </color>
     </background_color>
-    <precision>4</precision>
+    <format>2</format>
+    <precision>2</precision>
     <horizontal_alignment>2</horizontal_alignment>
     <border_width>1</border_width>
     <border_color>
@@ -1004,6 +979,46 @@
     <height>32</height>
     <foreground_color>
       <color red="140" green="150" blue="170">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Current_1</name>
+    <pv_name>$(P):$(R):PRES_RB</pv_name>
+    <x>470</x>
+    <y>110</y>
+    <width>140</width>
+    <height>30</height>
+    <font>
+      <font name="Value" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="230" blue="160">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="20" green="25" blue="35">
+      </color>
+    </background_color>
+    <format>2</format>
+    <precision>2</precision>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="60" green="70" blue="90">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>CurrLabel_1</name>
+    <text>Pressure</text>
+    <x>400</x>
+    <y>110</y>
+    <width>80</width>
+    <height>25</height>
+    <foreground_color>
+      <color red="200" green="200" blue="200">
       </color>
     </foreground_color>
   </widget>
