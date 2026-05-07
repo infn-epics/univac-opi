@@ -41,7 +41,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Firmware</name>
-    <pv_name>$(P):$(R):Firmware-Sts</pv_name>
+    <pv_name>pva://$(P):$(R):Firmware-Sts</pv_name>
     <x>90</x>
     <y>45</y>
     <width>520</width>
@@ -90,7 +90,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Voltage</name>
-    <pv_name>$(P):$(R):Voltage-Sts</pv_name>
+    <pv_name>pva://$(P):$(R):Voltage-Sts</pv_name>
     <x>74</x>
     <y>110</y>
     <width>120</width>
@@ -129,7 +129,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Current</name>
-    <pv_name>$(P):$(R):Current-Sts</pv_name>
+    <pv_name>pva://$(P):$(R):Current-Sts</pv_name>
     <x>281</x>
     <y>110</y>
     <width>110</width>
@@ -182,7 +182,7 @@
     <actions>
       <action type="write_pv">
         <description>HV ON</description>
-        <pv_name>$(P):$(R):HV-Cmd</pv_name>
+        <pv_name>pva://$(P):$(R):HV-Cmd</pv_name>
         <value>1</value>
       </action>
     </actions>
@@ -209,7 +209,7 @@
     <actions>
       <action type="write_pv">
         <description>HV OFF</description>
-        <pv_name>$(P):$(R):HV-Cmd</pv_name>
+        <pv_name>pva://$(P):$(R):HV-Cmd</pv_name>
         <value>0</value>
       </action>
     </actions>
@@ -245,7 +245,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>HVStatus</name>
-    <pv_name>$(P):$(R):HVStatus-Sts</pv_name>
+    <pv_name>pva://$(P):$(R):HVStatus-Sts</pv_name>
     <x>340</x>
     <y>190</y>
     <width>60</width>
@@ -311,7 +311,7 @@
     <actions>
       <action type="write_pv">
         <description>START mode</description>
-        <pv_name>$(P):$(R):Mode-Cmd</pv_name>
+        <pv_name>pva://$(P):$(R):Mode-Cmd</pv_name>
         <value>0</value>
       </action>
     </actions>
@@ -337,7 +337,7 @@
     <actions>
       <action type="write_pv">
         <description>PROTECT mode</description>
-        <pv_name>$(P):$(R):Mode-Cmd</pv_name>
+        <pv_name>pva://$(P):$(R):Mode-Cmd</pv_name>
         <value>1</value>
       </action>
     </actions>
@@ -372,7 +372,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>ModeRb</name>
-    <pv_name>$(P):$(R):Mode-Sts</pv_name>
+    <pv_name>pva://$(P):$(R):Mode-Sts</pv_name>
     <x>395</x>
     <y>275</y>
     <width>120</width>
@@ -423,7 +423,7 @@
     <actions>
       <action type="write_pv">
         <description>Set 3 kV</description>
-        <pv_name>$(P):$(R):VoltageSP-Cmd</pv_name>
+        <pv_name>pva://$(P):$(R):VoltageSP-Cmd</pv_name>
         <value>0</value>
       </action>
     </actions>
@@ -450,7 +450,7 @@
     <actions>
       <action type="write_pv">
         <description>Set 5 kV</description>
-        <pv_name>$(P):$(R):VoltageSP-Cmd</pv_name>
+        <pv_name>pva://$(P):$(R):VoltageSP-Cmd</pv_name>
         <value>1</value>
       </action>
     </actions>
@@ -477,7 +477,7 @@
     <actions>
       <action type="write_pv">
         <description>Set 7 kV</description>
-        <pv_name>$(P):$(R):VoltageSP-Cmd</pv_name>
+        <pv_name>pva://$(P):$(R):VoltageSP-Cmd</pv_name>
         <value>2</value>
       </action>
     </actions>
@@ -513,7 +513,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>VSPRb</name>
-    <pv_name>$(P):$(R):VoltageSP-Sts</pv_name>
+    <pv_name>pva://$(P):$(R):VoltageSP-Sts</pv_name>
     <x>420</x>
     <y>355</y>
     <height>30</height>
@@ -585,7 +585,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>ProtISet</name>
-    <pv_name>$(P):$(R):ProtectI-Cmd</pv_name>
+    <pv_name>pva://$(P):$(R):ProtectI-Cmd</pv_name>
     <x>155</x>
     <y>432</y>
     <height>30</height>
@@ -620,7 +620,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>ProtIRb</name>
-    <pv_name>$(P):$(R):ProtectI-Sts</pv_name>
+    <pv_name>pva://$(P):$(R):ProtectI-Sts</pv_name>
     <x>395</x>
     <y>432</y>
     <width>130</width>
@@ -694,7 +694,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>SP1Set</name>
-    <pv_name>$(P):$(R):SP1-Cmd</pv_name>
+    <pv_name>pva://$(P):$(R):SP1-Cmd</pv_name>
     <x>115</x>
     <y>515</y>
     <width>140</width>
@@ -730,7 +730,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>SP1Rb</name>
-    <pv_name>$(P):$(R):SP1-Sts</pv_name>
+    <pv_name>pva://$(P):$(R):SP1-Sts</pv_name>
     <x>310</x>
     <y>515</y>
     <width>140</width>
@@ -769,7 +769,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>SP2Set</name>
-    <pv_name>$(P):$(R):SP2-Cmd</pv_name>
+    <pv_name>pva://$(P):$(R):SP2-Cmd</pv_name>
     <x>115</x>
     <y>550</y>
     <width>140</width>
@@ -805,7 +805,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>SP2Rb</name>
-    <pv_name>$(P):$(R):SP2-Sts</pv_name>
+    <pv_name>pva://$(P):$(R):SP2-Sts</pv_name>
     <x>310</x>
     <y>550</y>
     <width>140</width>
@@ -844,7 +844,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>SPStat</name>
-    <pv_name>$(P):$(R):SPStatus-Sts</pv_name>
+    <pv_name>pva://$(P):$(R):SPStatus-Sts</pv_name>
     <x>155</x>
     <y>588</y>
     <width>50</width>
@@ -910,7 +910,7 @@
     <actions>
       <action type="write_pv">
         <description>Save to EEPROM</description>
-        <pv_name>$(P):$(R):Save-Cmd</pv_name>
+        <pv_name>pva://$(P):$(R):Save-Cmd</pv_name>
         <value>1</value>
       </action>
     </actions>
@@ -946,7 +946,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>AccessStatus</name>
-    <pv_name>$(P):$(R):LocalRemote-Sts</pv_name>
+    <pv_name>pva://$(P):$(R):LocalRemote-Sts</pv_name>
     <x>405</x>
     <y>666</y>
     <width>170</width>
@@ -984,7 +984,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Current_1</name>
-    <pv_name>$(P):$(R):PRES_RB</pv_name>
+    <pv_name>pva://$(P):$(R):PRES_RB</pv_name>
     <x>470</x>
     <y>110</y>
     <width>140</width>
