@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-04-29 12:28:01 by valentinadompe-->
+<!--Saved on 2026-05-12 12:01:23 by valentinadompe-->
 <display version="2.0.0">
   <name>Agilent Turbo Twistorr 305</name>
-  <macros>
-    <P>prova</P>
-  </macros>
   <width>1000</width>
   <height>900</height>
   <actions>
@@ -12,9 +9,9 @@
   <grid_step_x>6</grid_step_x>
   <grid_step_y>6</grid_step_y>
   <widget type="group" version="3.0.0">
-    <name>Agilent Turbo Twistorr 305</name>
+    <name>Agilent Turbo Twistorr 305 - $(DEVICE)</name>
     <macros>
-      <P>twistorr</P>
+      <DEVICE>$(CONTROLLER):$(P)</DEVICE>
     </macros>
     <x>12</x>
     <width>846</width>
@@ -45,7 +42,7 @@
       <height>189</height>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_79</name>
-        <pv_name>$(P):ROT_SPEED_HZ_RB</pv_name>
+        <pv_name>$(DEVICE):ROT_SPEED_HZ_RB</pv_name>
         <x>250</x>
         <y>26</y>
         <width>84</width>
@@ -56,7 +53,7 @@
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_12</name>
-        <pv_name>$(P):LOW_SPEED_ONOFF_RB</pv_name>
+        <pv_name>$(DEVICE):LOW_SPEED_ONOFF_RB</pv_name>
         <x>211</x>
         <y>18</y>
         <width>30</width>
@@ -74,7 +71,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_92</name>
-        <pv_name>$(P):LOW_SPEED_ONOFF_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):LOW_SPEED_ONOFF_RB.DESC</pv_name>
         <x>6</x>
         <y>26</y>
         <width>126</width>
@@ -103,7 +100,7 @@
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Entry_1</name>
-        <pv_name>$(P):ROT_SPEED_ALARM_LL</pv_name>
+        <pv_name>$(DEVICE):ROT_SPEED_ALARM_LL</pv_name>
         <x>60</x>
         <y>119</y>
         <width>59</width>
@@ -111,7 +108,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update</name>
-        <pv_name>$(P):ROT_SPEED_ALARM_LL.DESC</pv_name>
+        <pv_name>$(DEVICE):ROT_SPEED_ALARM_LL.DESC</pv_name>
         <x>4</x>
         <y>94</y>
         <width>182</width>
@@ -128,7 +125,7 @@
       <widget type="led" version="2.0.0">
         <name>LED_13</name>
         <class>GOOD_BAD</class>
-        <pv_name>$(P):FREQ_LOW_LIM_ALARM_FLAG</pv_name>
+        <pv_name>$(DEVICE):FREQ_LOW_LIM_ALARM_FLAG</pv_name>
         <x>216</x>
         <y>89</y>
         <width>64</width>
@@ -155,7 +152,7 @@
       <widget type="led" version="2.0.0">
         <name>LED_11</name>
         <class>GOOD_BAD</class>
-        <pv_name>$(P):STATUS_RB</pv_name>
+        <pv_name>$(DEVICE):STATUS_RB</pv_name>
         <x>5</x>
         <y>21</y>
         <width>60</width>
@@ -173,7 +170,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_83</name>
-        <pv_name>$(P):PUMP_STATUS.DESC</pv_name>
+        <pv_name>$(DEVICE):PUMP_STATUS.DESC</pv_name>
         <x>76</x>
         <y>27</y>
         <width>133</width>
@@ -190,7 +187,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_84</name>
-        <pv_name>$(P):PUMP_STATUS</pv_name>
+        <pv_name>$(DEVICE):PUMP_STATUS</pv_name>
         <x>218</x>
         <y>27</y>
         <width>103</width>
@@ -211,7 +208,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_145</name>
-        <pv_name>$(P):ACT_ROT_SPEED_HZ.DESC</pv_name>
+        <pv_name>$(DEVICE):ACT_ROT_SPEED_HZ.DESC</pv_name>
         <x>76</x>
         <y>51</y>
         <width>133</width>
@@ -228,7 +225,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_146</name>
-        <pv_name>$(P):ACT_ROT_SPEED_HZ</pv_name>
+        <pv_name>$(DEVICE):ACT_ROT_SPEED_HZ</pv_name>
         <x>218</x>
         <y>50</y>
         <width>84</width>
@@ -246,7 +243,7 @@
       <height>379</height>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_88</name>
-        <pv_name>$(P):ACT_PUMP_POW.DESC</pv_name>
+        <pv_name>$(DEVICE):ACT_PUMP_POW.DESC</pv_name>
         <x>11</x>
         <y>45</y>
         <width>171</width>
@@ -263,7 +260,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_89</name>
-        <pv_name>$(P):ACT_PUMP_POW</pv_name>
+        <pv_name>$(DEVICE):ACT_PUMP_POW</pv_name>
         <x>230</x>
         <y>45</y>
         <width>84</width>
@@ -274,7 +271,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_90</name>
-        <pv_name>$(P):ACT_PUMP_CURR.DESC</pv_name>
+        <pv_name>$(DEVICE):ACT_PUMP_CURR.DESC</pv_name>
         <x>11</x>
         <y>74</y>
         <width>171</width>
@@ -291,7 +288,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_91</name>
-        <pv_name>$(P):ACT_PUMP_CURR</pv_name>
+        <pv_name>$(DEVICE):ACT_PUMP_CURR</pv_name>
         <x>230</x>
         <y>74</y>
         <width>84</width>
@@ -302,7 +299,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_96</name>
-        <pv_name>$(P):CONTROL_MODE_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):CONTROL_MODE_RB.DESC</pv_name>
         <x>11</x>
         <y>277</y>
         <width>204</width>
@@ -319,7 +316,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_97</name>
-        <pv_name>$(P):CONTROL_MODE_RB</pv_name>
+        <pv_name>$(DEVICE):CONTROL_MODE_RB</pv_name>
         <x>230</x>
         <y>277</y>
         <width>84</width>
@@ -330,7 +327,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_98</name>
-        <pv_name>$(P):INTERLOCK_TYPE_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):INTERLOCK_TYPE_RB.DESC</pv_name>
         <x>11</x>
         <y>306</y>
         <width>204</width>
@@ -347,7 +344,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_99</name>
-        <pv_name>$(P):INTERLOCK_TYPE_RB</pv_name>
+        <pv_name>$(DEVICE):INTERLOCK_TYPE_RB</pv_name>
         <x>230</x>
         <y>305</y>
         <width>84</width>
@@ -358,7 +355,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_100</name>
-        <pv_name>$(P):CTRL_HEATSINK_TEMP.DESC</pv_name>
+        <pv_name>$(DEVICE):CTRL_HEATSINK_TEMP.DESC</pv_name>
         <x>11</x>
         <y>103</y>
         <width>204</width>
@@ -375,7 +372,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_101</name>
-        <pv_name>$(P):CTRL_HEATSINK_TEMP</pv_name>
+        <pv_name>$(DEVICE):CTRL_HEATSINK_TEMP</pv_name>
         <x>230</x>
         <y>103</y>
         <width>84</width>
@@ -386,7 +383,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_102</name>
-        <pv_name>$(P):CTRL_COOLAIR_TEMP.DESC</pv_name>
+        <pv_name>$(DEVICE):CTRL_COOLAIR_TEMP.DESC</pv_name>
         <x>11</x>
         <y>132</y>
         <width>204</width>
@@ -403,7 +400,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_103</name>
-        <pv_name>$(P):CTRL_COOLAIR_TEMP</pv_name>
+        <pv_name>$(DEVICE):CTRL_COOLAIR_TEMP</pv_name>
         <x>230</x>
         <y>132</y>
         <width>84</width>
@@ -414,7 +411,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_104</name>
-        <pv_name>$(P):CYCL_TIME_MIN.DESC</pv_name>
+        <pv_name>$(DEVICE):CYCL_TIME_MIN.DESC</pv_name>
         <x>11</x>
         <y>190</y>
         <width>204</width>
@@ -431,7 +428,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_105</name>
-        <pv_name>$(P):CYCL_TIME_MIN</pv_name>
+        <pv_name>$(DEVICE):CYCL_TIME_MIN</pv_name>
         <x>230</x>
         <y>190</y>
         <width>84</width>
@@ -442,7 +439,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_106</name>
-        <pv_name>$(P):CYCL_NUM.DESC</pv_name>
+        <pv_name>$(DEVICE):CYCL_NUM.DESC</pv_name>
         <x>11</x>
         <y>219</y>
         <width>204</width>
@@ -459,7 +456,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_107</name>
-        <pv_name>$(P):CYCL_NUM</pv_name>
+        <pv_name>$(DEVICE):CYCL_NUM</pv_name>
         <x>230</x>
         <y>219</y>
         <width>84</width>
@@ -470,7 +467,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_108</name>
-        <pv_name>$(P):PUMP_OP_HRS.DESC</pv_name>
+        <pv_name>$(DEVICE):PUMP_OP_HRS.DESC</pv_name>
         <x>11</x>
         <y>248</y>
         <width>204</width>
@@ -487,7 +484,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_109</name>
-        <pv_name>$(P):PUMP_OP_HRS</pv_name>
+        <pv_name>$(DEVICE):PUMP_OP_HRS</pv_name>
         <x>230</x>
         <y>248</y>
         <width>84</width>
@@ -498,7 +495,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_110</name>
-        <pv_name>$(P):PUMP_TEMP</pv_name>
+        <pv_name>$(DEVICE):PUMP_TEMP</pv_name>
         <x>230</x>
         <y>161</y>
         <width>84</width>
@@ -509,7 +506,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_111</name>
-        <pv_name>$(P):PUMP_TEMP.DESC</pv_name>
+        <pv_name>$(DEVICE):PUMP_TEMP.DESC</pv_name>
         <x>11</x>
         <y>161</y>
         <width>204</width>
@@ -526,7 +523,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_81</name>
-        <pv_name>$(P):ROT_SPEED_RPM_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):ROT_SPEED_RPM_RB.DESC</pv_name>
         <x>11</x>
         <y>16</y>
         <width>171</width>
@@ -543,7 +540,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_82</name>
-        <pv_name>$(P):ROT_SPEED_RPM_RB</pv_name>
+        <pv_name>$(DEVICE):ROT_SPEED_RPM_RB</pv_name>
         <x>230</x>
         <y>16</y>
         <width>88</width>
@@ -560,7 +557,7 @@
       <height>325</height>
       <widget type="byte_monitor" version="2.0.0">
         <name>Byte Monitor</name>
-        <pv_name>$(P):ERROR_CODE</pv_name>
+        <pv_name>$(DEVICE):ERROR_CODE</pv_name>
         <x>18</x>
         <y>18</y>
         <width>31</width>
@@ -577,7 +574,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_144</name>
-        <pv_name>$(P):ERROR:TOO_HI_LOAD.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR:TOO_HI_LOAD.DESC</pv_name>
         <x>90</x>
         <y>25</y>
         <width>204</width>
@@ -594,7 +591,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_143</name>
-        <pv_name>$(P):ERROR:SHORT_CIRC.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR:SHORT_CIRC.DESC</pv_name>
         <x>90</x>
         <y>57</y>
         <width>204</width>
@@ -611,7 +608,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_142</name>
-        <pv_name>$(P):ERROR:OVER_VOLT.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR:OVER_VOLT.DESC</pv_name>
         <x>90</x>
         <y>89</y>
         <width>204</width>
@@ -628,7 +625,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_141</name>
-        <pv_name>$(P):ERROR:OVERRIDE.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR:OVERRIDE.DESC</pv_name>
         <x>90</x>
         <y>119</y>
         <width>204</width>
@@ -645,7 +642,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_140</name>
-        <pv_name>$(P):ERROR:RUN_UP_TIME.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR:RUN_UP_TIME.DESC</pv_name>
         <x>90</x>
         <y>151</y>
         <width>204</width>
@@ -662,7 +659,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_139</name>
-        <pv_name>$(P):ERROR:CTR_OVER_TEMP.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR:CTR_OVER_TEMP.DESC</pv_name>
         <x>90</x>
         <y>182</y>
         <width>171</width>
@@ -679,7 +676,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_138</name>
-        <pv_name>$(P):ERROR:PUMP_OVER_TEMP.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR:PUMP_OVER_TEMP.DESC</pv_name>
         <x>90</x>
         <y>213</y>
         <width>171</width>
@@ -696,7 +693,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_137</name>
-        <pv_name>$(P):ERROR:NO_PUMP.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR:NO_PUMP.DESC</pv_name>
         <x>90</x>
         <y>245</y>
         <width>171</width>
