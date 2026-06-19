@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-04-29 14:43:53 by valentinadompe-->
 <display version="2.0.0">
   <name>Pfeiffer HiScroll6</name>
   <macros>
-    <P>prova</P>
+    <DEVICE>$(PREFIX):$(P)</DEVICE>
   </macros>
   <width>1000</width>
   <height>900</height>
@@ -12,11 +11,8 @@
   <grid_step_x>6</grid_step_x>
   <grid_step_y>6</grid_step_y>
   <widget type="group" version="3.0.0">
-    <name>Pfeiffer HiScroll6</name>
-    <macros>
-      <P>prova</P>
-    </macros>
-    <x>12</x>
+    <name>Pfeiffer HiScroll6 - $(DEVICE)</name>
+    <x>7</x>
     <width>978</width>
     <height>882</height>
     <widget type="label" version="2.0.0">
@@ -46,7 +42,7 @@
       <widget type="led" version="2.0.0">
         <name>LED_1</name>
         <class>GOOD_BAD</class>
-        <pv_name>$(P):ELE_OVERTEMP</pv_name>
+        <pv_name>$(DEVICE):ELE_OVERTEMP</pv_name>
         <x>230</x>
         <y>53</y>
         <width>30</width>
@@ -71,7 +67,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_24</name>
-        <pv_name>$(P):ERROR</pv_name>
+        <pv_name>$(DEVICE):ERROR</pv_name>
         <x>96</x>
         <y>24</y>
         <width>225</width>
@@ -81,7 +77,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_30</name>
-        <pv_name>$(P):ELE_OVERTEMP.DESC</pv_name>
+        <pv_name>$(DEVICE):ELE_OVERTEMP.DESC</pv_name>
         <x>12</x>
         <y>60</y>
         <width>189</width>
@@ -94,7 +90,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_31</name>
-        <pv_name>$(P):PUMP_OVERTEMP.DESC</pv_name>
+        <pv_name>$(DEVICE):PUMP_OVERTEMP.DESC</pv_name>
         <x>12</x>
         <y>100</y>
         <width>201</width>
@@ -108,7 +104,7 @@
       <widget type="led" version="2.0.0">
         <name>LED_9</name>
         <class>GOOD_BAD</class>
-        <pv_name>$(P):PUMP_OVERTEMP</pv_name>
+        <pv_name>$(DEVICE):PUMP_OVERTEMP</pv_name>
         <x>230</x>
         <y>93</y>
         <width>30</width>
@@ -125,7 +121,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_89</name>
-        <pv_name>$(P):ERROR_HIST1.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST1.DESC</pv_name>
         <x>12</x>
         <y>145</y>
         <width>120</width>
@@ -138,7 +134,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_90</name>
-        <pv_name>$(P):ERROR_HIST1</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST1</pv_name>
         <x>145</x>
         <y>145</y>
         <width>200</width>
@@ -148,7 +144,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_91</name>
-        <pv_name>$(P):ERROR_HIST2.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST2.DESC</pv_name>
         <x>12</x>
         <y>175</y>
         <width>120</width>
@@ -161,7 +157,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_92</name>
-        <pv_name>$(P):ERROR_HIST2</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST2</pv_name>
         <x>145</x>
         <y>175</y>
         <width>200</width>
@@ -171,7 +167,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_93</name>
-        <pv_name>$(P):ERROR_HIST3.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST3.DESC</pv_name>
         <x>12</x>
         <y>205</y>
         <width>120</width>
@@ -184,7 +180,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_94</name>
-        <pv_name>$(P):ERROR_HIST3</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST3</pv_name>
         <x>145</x>
         <y>205</y>
         <width>200</width>
@@ -194,7 +190,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_99</name>
-        <pv_name>$(P):ERROR_HIST5.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST5.DESC</pv_name>
         <x>12</x>
         <y>265</y>
         <width>120</width>
@@ -207,7 +203,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_100</name>
-        <pv_name>$(P):ERROR_HIST5</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST5</pv_name>
         <x>145</x>
         <y>265</y>
         <width>200</width>
@@ -217,7 +213,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_101</name>
-        <pv_name>$(P):ERROR_HIST4.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST4.DESC</pv_name>
         <x>12</x>
         <y>235</y>
         <width>120</width>
@@ -230,7 +226,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_102</name>
-        <pv_name>$(P):ERROR_HIST4</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST4</pv_name>
         <x>145</x>
         <y>235</y>
         <width>200</width>
@@ -240,7 +236,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_103</name>
-        <pv_name>$(P):ERROR_HIST6.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST6.DESC</pv_name>
         <x>439</x>
         <y>145</y>
         <width>120</width>
@@ -253,7 +249,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_104</name>
-        <pv_name>$(P):ERROR_HIST6</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST6</pv_name>
         <x>572</x>
         <y>145</y>
         <width>200</width>
@@ -263,7 +259,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_105</name>
-        <pv_name>$(P):ERROR_HIST7.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST7.DESC</pv_name>
         <x>439</x>
         <y>175</y>
         <width>120</width>
@@ -276,7 +272,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_106</name>
-        <pv_name>$(P):ERROR_HIST7</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST7</pv_name>
         <x>574</x>
         <y>175</y>
         <width>200</width>
@@ -286,7 +282,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_107</name>
-        <pv_name>$(P):ERROR_HIST8.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST8.DESC</pv_name>
         <x>439</x>
         <y>205</y>
         <width>120</width>
@@ -299,7 +295,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_108</name>
-        <pv_name>$(P):ERROR_HIST8</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST8</pv_name>
         <x>574</x>
         <y>205</y>
         <width>200</width>
@@ -309,7 +305,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_109</name>
-        <pv_name>$(P):ERROR_HIST9.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST9.DESC</pv_name>
         <x>439</x>
         <y>235</y>
         <width>120</width>
@@ -322,7 +318,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_110</name>
-        <pv_name>$(P):ERROR_HIST9</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST9</pv_name>
         <x>574</x>
         <y>235</y>
         <width>200</width>
@@ -332,7 +328,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_111</name>
-        <pv_name>$(P):ERROR_HIST10.DESC</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST10.DESC</pv_name>
         <x>439</x>
         <y>265</y>
         <width>120</width>
@@ -345,7 +341,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_112</name>
-        <pv_name>$(P):ERROR_HIST10</pv_name>
+        <pv_name>$(DEVICE):ERROR_HIST10</pv_name>
         <x>574</x>
         <y>265</y>
         <width>200</width>
@@ -363,7 +359,7 @@
       <widget type="led" version="2.0.0">
         <name>LED_4</name>
         <class>GOOD_BAD</class>
-        <pv_name>$(P):STB_RB</pv_name>
+        <pv_name>$(DEVICE):STB_RB</pv_name>
         <x>240</x>
         <y>17</y>
         <width>30</width>
@@ -382,7 +378,7 @@
       <widget type="led" version="2.0.0">
         <name>LED_5</name>
         <class>GOOD_BAD</class>
-        <pv_name>$(P):AUTO_STB_RB</pv_name>
+        <pv_name>$(DEVICE):AUTO_STB_RB</pv_name>
         <x>240</x>
         <y>57</y>
         <width>30</width>
@@ -401,7 +397,7 @@
       <widget type="led" version="2.0.0">
         <name>LED_6</name>
         <class>GOOD_BAD</class>
-        <pv_name>$(P):AUTO_BOOST_RB</pv_name>
+        <pv_name>$(DEVICE):AUTO_BOOST_RB</pv_name>
         <x>240</x>
         <y>97</y>
         <width>30</width>
@@ -420,7 +416,7 @@
       <widget type="led" version="2.0.0">
         <name>LED_7</name>
         <class>GOOD_BAD</class>
-        <pv_name>$(P):AUTO_START_RB</pv_name>
+        <pv_name>$(DEVICE):AUTO_START_RB</pv_name>
         <x>240</x>
         <y>137</y>
         <width>30</width>
@@ -438,7 +434,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_25</name>
-        <pv_name>$(P):STB_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):STB_RB.DESC</pv_name>
         <x>12</x>
         <y>23</y>
         <width>188</width>
@@ -451,7 +447,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_26</name>
-        <pv_name>$(P):AUTO_STB_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):AUTO_STB_RB.DESC</pv_name>
         <x>12</x>
         <y>63</y>
         <width>188</width>
@@ -464,7 +460,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_27</name>
-        <pv_name>$(P):AUTO_BOOST_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):AUTO_BOOST_RB.DESC</pv_name>
         <x>12</x>
         <y>103</y>
         <width>188</width>
@@ -477,7 +473,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_28</name>
-        <pv_name>$(P):AUTO_START_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):AUTO_START_RB.DESC</pv_name>
         <x>12</x>
         <y>143</y>
         <width>188</width>
@@ -490,7 +486,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_47</name>
-        <pv_name>$(P):ROT_SPEED_CTR_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):ROT_SPEED_CTR_RB.DESC</pv_name>
         <x>12</x>
         <y>183</y>
         <width>188</width>
@@ -504,7 +500,7 @@
       <widget type="led" version="2.0.0">
         <name>LED_10</name>
         <class>GOOD_BAD</class>
-        <pv_name>$(P):ROT_SPEED_CTR_RB</pv_name>
+        <pv_name>$(DEVICE):ROT_SPEED_CTR_RB</pv_name>
         <x>240</x>
         <y>177</y>
         <width>30</width>
@@ -522,7 +518,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_50</name>
-        <pv_name>$(P):SET_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):SET_RB.DESC</pv_name>
         <x>378</x>
         <y>174</y>
         <width>222</width>
@@ -536,7 +532,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_51</name>
-        <pv_name>$(P):SET_RB</pv_name>
+        <pv_name>$(DEVICE):SET_RB</pv_name>
         <x>446</x>
         <y>192</y>
         <width>83</width>
@@ -546,7 +542,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_56</name>
-        <pv_name>$(P):SET_STB_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):SET_STB_RB.DESC</pv_name>
         <x>378</x>
         <y>13</y>
         <width>222</width>
@@ -560,7 +556,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_57</name>
-        <pv_name>$(P):SET_STB_RB</pv_name>
+        <pv_name>$(DEVICE):SET_STB_RB</pv_name>
         <x>446</x>
         <y>31</y>
         <width>83</width>
@@ -570,7 +566,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_58</name>
-        <pv_name>$(P):ON_THRESH_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):ON_THRESH_RB.DESC</pv_name>
         <x>378</x>
         <y>56</y>
         <width>222</width>
@@ -584,7 +580,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_59</name>
-        <pv_name>$(P):ON_THRESH_RB</pv_name>
+        <pv_name>$(DEVICE):ON_THRESH_RB</pv_name>
         <x>446</x>
         <y>74</y>
         <width>83</width>
@@ -595,7 +591,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_60</name>
-        <pv_name>$(P):OFF_THRESH_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):OFF_THRESH_RB.DESC</pv_name>
         <x>624</x>
         <y>56</y>
         <width>222</width>
@@ -609,7 +605,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_61</name>
-        <pv_name>$(P):OFF_THRESH_RB</pv_name>
+        <pv_name>$(DEVICE):OFF_THRESH_RB</pv_name>
         <x>690</x>
         <y>74</y>
         <width>83</width>
@@ -627,7 +623,7 @@
       <height>213</height>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_32</name>
-        <pv_name>$(P):DRIVE_CURR.DESC</pv_name>
+        <pv_name>$(DEVICE):DRIVE_CURR.DESC</pv_name>
         <x>6</x>
         <y>17</y>
         <width>171</width>
@@ -640,7 +636,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_33</name>
-        <pv_name>$(P):DRIVE_CURR</pv_name>
+        <pv_name>$(DEVICE):DRIVE_CURR</pv_name>
         <x>180</x>
         <y>17</y>
         <width>75</width>
@@ -651,7 +647,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_34</name>
-        <pv_name>$(P):PUMP_OP_HOUR.DESC</pv_name>
+        <pv_name>$(DEVICE):PUMP_OP_HOUR.DESC</pv_name>
         <x>6</x>
         <y>49</y>
         <width>171</width>
@@ -664,7 +660,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_35</name>
-        <pv_name>$(P):PUMP_OP_HOUR</pv_name>
+        <pv_name>$(DEVICE):PUMP_OP_HOUR</pv_name>
         <x>180</x>
         <y>49</y>
         <width>75</width>
@@ -674,7 +670,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_37</name>
-        <pv_name>$(P):ELEC_OP_HOUR.DESC</pv_name>
+        <pv_name>$(DEVICE):ELEC_OP_HOUR.DESC</pv_name>
         <x>6</x>
         <y>81</y>
         <width>171</width>
@@ -687,7 +683,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_38</name>
-        <pv_name>$(P):ELEC_OP_HOUR</pv_name>
+        <pv_name>$(DEVICE):ELEC_OP_HOUR</pv_name>
         <x>180</x>
         <y>81</y>
         <width>75</width>
@@ -697,7 +693,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_39</name>
-        <pv_name>$(P):DRIVE_POWER.DESC</pv_name>
+        <pv_name>$(DEVICE):DRIVE_POWER.DESC</pv_name>
         <x>6</x>
         <y>113</y>
         <width>171</width>
@@ -710,7 +706,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_40</name>
-        <pv_name>$(P):DRIVE_POWER</pv_name>
+        <pv_name>$(DEVICE):DRIVE_POWER</pv_name>
         <x>180</x>
         <y>113</y>
         <width>75</width>
@@ -720,7 +716,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_41</name>
-        <pv_name>$(P):FINAL_STAGE_TEMP.DESC</pv_name>
+        <pv_name>$(DEVICE):FINAL_STAGE_TEMP.DESC</pv_name>
         <x>6</x>
         <y>145</y>
         <width>171</width>
@@ -733,7 +729,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_42</name>
-        <pv_name>$(P):FINAL_STAGE_TEMP</pv_name>
+        <pv_name>$(DEVICE):FINAL_STAGE_TEMP</pv_name>
         <x>180</x>
         <y>145</y>
         <width>75</width>
@@ -743,7 +739,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_43</name>
-        <pv_name>$(P):ELEC_TEMP.DESC</pv_name>
+        <pv_name>$(DEVICE):ELEC_TEMP.DESC</pv_name>
         <x>287</x>
         <y>17</y>
         <width>153</width>
@@ -756,7 +752,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_44</name>
-        <pv_name>$(P):ELEC_TEMP</pv_name>
+        <pv_name>$(DEVICE):ELEC_TEMP</pv_name>
         <x>449</x>
         <y>17</y>
         <width>75</width>
@@ -766,7 +762,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_45</name>
-        <pv_name>$(P):MOTOR_TEMP.DESC</pv_name>
+        <pv_name>$(DEVICE):MOTOR_TEMP.DESC</pv_name>
         <x>287</x>
         <y>49</y>
         <width>153</width>
@@ -779,7 +775,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_46</name>
-        <pv_name>$(P):MOTOR_TEMP</pv_name>
+        <pv_name>$(DEVICE):MOTOR_TEMP</pv_name>
         <x>449</x>
         <y>49</y>
         <width>75</width>
@@ -789,7 +785,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_48</name>
-        <pv_name>$(P):SET_ROT_SPEED.DESC</pv_name>
+        <pv_name>$(DEVICE):SET_ROT_SPEED.DESC</pv_name>
         <x>287</x>
         <y>81</y>
         <width>153</width>
@@ -802,7 +798,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_49</name>
-        <pv_name>$(P):SET_ROT_SPEED</pv_name>
+        <pv_name>$(DEVICE):SET_ROT_SPEED</pv_name>
         <x>449</x>
         <y>81</y>
         <width>75</width>
@@ -812,7 +808,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_54</name>
-        <pv_name>$(P):NOM_ROT_SPEED.DESC</pv_name>
+        <pv_name>$(DEVICE):NOM_ROT_SPEED.DESC</pv_name>
         <x>287</x>
         <y>113</y>
         <width>153</width>
@@ -825,7 +821,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_55</name>
-        <pv_name>$(P):NOM_ROT_SPEED</pv_name>
+        <pv_name>$(DEVICE):NOM_ROT_SPEED</pv_name>
         <x>449</x>
         <y>113</y>
         <width>75</width>
@@ -835,7 +831,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_64</name>
-        <pv_name>$(P):IF_MODE_RB.DESC</pv_name>
+        <pv_name>$(DEVICE):IF_MODE_RB.DESC</pv_name>
         <x>287</x>
         <y>145</y>
         <width>153</width>
@@ -848,7 +844,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_65</name>
-        <pv_name>$(P):IF_MODE_RB</pv_name>
+        <pv_name>$(DEVICE):IF_MODE_RB</pv_name>
         <x>449</x>
         <y>145</y>
         <width>75</width>
@@ -866,7 +862,7 @@
       <widget type="led" version="2.0.0">
         <name>LED_11</name>
         <class>GOOD_BAD</class>
-        <pv_name>$(P):STATUS_RB</pv_name>
+        <pv_name>$(DEVICE):STATUS_RB</pv_name>
         <x>191</x>
         <y>14</y>
         <width>60</width>
@@ -884,7 +880,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_81</name>
-        <pv_name>$(P):ACT_ROT_SPEED.DESC</pv_name>
+        <pv_name>$(DEVICE):ACT_ROT_SPEED.DESC</pv_name>
         <x>11</x>
         <y>101</y>
         <width>153</width>
@@ -901,7 +897,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_82</name>
-        <pv_name>$(P):ACT_ROT_SPEED</pv_name>
+        <pv_name>$(DEVICE):ACT_ROT_SPEED</pv_name>
         <x>173</x>
         <y>101</y>
         <width>103</width>
@@ -911,7 +907,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_85</name>
-        <pv_name>$(P):PRES.DESC</pv_name>
+        <pv_name>$(DEVICE):PRES.DESC</pv_name>
         <x>11</x>
         <y>131</y>
         <width>153</width>
@@ -928,7 +924,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_86</name>
-        <pv_name>$(P):PRES</pv_name>
+        <pv_name>$(DEVICE):PRES</pv_name>
         <x>173</x>
         <y>131</y>
         <width>103</width>
@@ -941,7 +937,7 @@
       <widget type="led" version="2.0.0">
         <name>LED</name>
         <class>ERROR</class>
-        <pv_name>$(P):PRES_UNDERRANGE_FLAG</pv_name>
+        <pv_name>$(DEVICE):PRES_UNDERRANGE_FLAG</pv_name>
         <x>175</x>
         <y>157</y>
         <width>18</width>
@@ -986,7 +982,7 @@
     <name>Text Update_84</name>
     <x>6</x>
     <y>114</y>
-    <width>0</width>
-    <height>0</height>
+    <width>1</width>
+    <height>1</height>
   </widget>
 </display>
